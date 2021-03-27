@@ -146,12 +146,9 @@ p {
     margin: 0px auto;
     border-radius: 150px;
 }
-
-
 /* HERO STYLES END */
 
 /* WORK STYLES START */
-
 .work-projects {
     background-color: #fff;
 }
@@ -160,7 +157,7 @@ p {
 .work-title {
     font-size: 35px;
     color: var(--secondary-color);
-    border-bottom: 3px solid;
+    border-bottom: 3px dotted;
     padding-bottom: 10px;
     text-align: center;
     margin: 0px auto 35px auto;
@@ -173,13 +170,21 @@ p {
     border-radius: 25px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.run-buddy h3 {
+    text-align: center;
+    color: var(--primary-color);
 }
 
 .work-image {
-    width: 30%;
-    height: 30%;
+    width: 100%;
 }
 
+.work-image.secondary-image {
+    width: 48%;
+}
 /* WORK STYLES END */
 
 
@@ -201,16 +206,6 @@ p {
 .summary {   
     line-height: 1.7;
     color: var(--secondary-color);
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-
-.intro p {
-    line-height: 1.7;
-    color: var(--primary-color);
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
