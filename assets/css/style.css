@@ -1,7 +1,7 @@
 :root {
     --primary-color: #571be3;
-    --secondary-color: #024e76;
-    --tertiary-color: #39a6b2;
+    --secondary-color: #000000;
+    --tertiary-color: #ffffff;
 }
 
   * {
@@ -18,7 +18,7 @@ body {
 
 /* HEADER / NAV BAR STYLES START */
 header {
-    padding: 20px;
+    padding: 15px;
     background-color: #ffffff;
     color: black;
 }
@@ -29,13 +29,14 @@ header nav {
 
 header nav ul {
     list-style-type: none;
-    text-align: right;
+    float: right;
 }
 
 header nav ul li {
     display: inline-block;
     margin-left: 65px;
 }
+
 
 a {
     color: #030303;
@@ -46,17 +47,59 @@ a {
 
 
 /* FOOTER STYLES START */
+footer {
+    background: var(--tertiary-color);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+}
 
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+    justify-content: flex-start;
+}
 
+footer div {
+    margin: 4px 0;
+}
 
+footer div ul {
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+footer div ul li {
+    padding: 10px 15px;
+    /* font-size: 1.55vw; */
+    justify-content: flex-end;
+    display: inline-block;
+    margin-left: 65px;
+    display: flex;
+}
 
 
 /* END FOOTER STYLES */
 
+/* STYLE ALL PARAGRAPH TAGS */
+p {
+    font-size: 20px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
 
 /* HERO STYLES START */
 .hero {
-    height: 500px;
+    height: 600px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/blue.png");
@@ -81,7 +124,7 @@ a {
     margin: 3.5%;
     color: #fff;
     font-size: 25px;
-    line-height: 1.2;
+    line-height: 3.2;
 }
 
 .hero-name h1 {
@@ -90,7 +133,98 @@ a {
     color: var(--primary-color);
 }
 
+/* .hero-img img {
+    flex: 1 12%;
+    margin-left: 15px;
+} */
 
+.hero-img img {
+    display: block;
+    margin: 0px auto;
+    border-radius: 150px;
+}
 
 
 /* HERO STYLES END */
+
+/* WORK STYLES START */
+
+.work-projects {
+    background-color: #fff;
+}
+
+
+.work-title {
+    font-size: 35px;
+    color: var(--secondary-color);
+    border-bottom: 3px solid;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0px auto 35px auto;
+    width: 50%;
+}
+
+.run-buddy {
+    /* width: 200px;
+    height: 300px;
+    margin: right;
+    background-position: center;
+    background: url("../images/placeholder.png");
+    background-size: cover;
+    text-align: center;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    /* float: left; */
+    /* display: flex;
+    flex-direction: row;
+    flex: wrap;
+    align-items: center;
+    justify-content: space-evenly; */
+    /* width: 60%;
+    height: 300px;
+    background-position: center;
+    background: url("../images/placeholder.png");
+    background-size: cover;
+    text-align: center;
+    border-color: var(--secondary-color);
+    border-radius: 25px;
+
+
+} */
+
+/* WORK STYLES END */
+
+
+
+/* UTILITIES */
+/* .text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+} */
+
+.flex-row {
+    display: flex;
+}
+
+/* ABOUT ME SECTION */
+.summary {   
+    line-height: 1.7;
+    color: var(--secondary-color);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.intro p {
+    line-height: 1.7;
+    color: var(--primary-color);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
