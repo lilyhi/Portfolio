@@ -159,11 +159,19 @@ p {
 }
 
 .work-image {
-    width: 100%;
+    width: 90%;
+    border-radius: 70px;
 }
 
 .work-image.secondary-image {
+    width: 78%;
+    justify-content: space-evenly;
+    border-radius: 70px;
+}
+
+.work-image.third-image {
     width: 48%;
+    border-radius: 70px;
 }
 /* WORK STYLES END */
 
